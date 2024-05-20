@@ -3,6 +3,36 @@
     font-family: 'Raleway', sans-serif;
 }
 
+nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+nav a img {
+    padding: 20px;
+    height: 25px;
+}
+
+nav ul {
+    list-style-type: none;
+    display: flex;
+    flex-direction: row;
+    margin-top: 0;
+}
+
+nav li {
+    margin-right: 30px;
+    margin-left: 30px;
+    padding-top: 20px;
+}
+
+nav li:hover {
+    border-top: 2px #0065FC solid;
+    color: #0065FC;
+    padding-top: 18px;
+}
+
 :root {
     --main-color: #0065FC;
     --main-bg-color: #F2F2F2;
@@ -16,6 +46,7 @@
 body {
     display: flex;
     justify-content: center;
+    margin-top: 0;
 }
 
 .main-container {
