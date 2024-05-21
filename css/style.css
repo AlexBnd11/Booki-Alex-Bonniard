@@ -3,36 +3,6 @@
     font-family: 'Raleway', sans-serif;
 }
 
-nav {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-}
-
-nav a img {
-    padding: 20px;
-    height: 25px;
-}
-
-nav ul {
-    list-style-type: none;
-    display: flex;
-    flex-direction: row;
-    margin-top: 0;
-}
-
-nav li {
-    margin-right: 30px;
-    margin-left: 30px;
-    padding-top: 20px;
-}
-
-nav li:hover {
-    border-top: 2px #0065FC solid;
-    color: #0065FC;
-    padding-top: 18px;
-}
-
 :root {
     --main-color: #0065FC;
     --main-bg-color: #F2F2F2;
@@ -87,6 +57,106 @@ a {
 
 .neutral-star {
     color: var(--main-bg-color)
+}
+
+h1 {
+    font-size: 25px;
+    margin-bottom: 5px;
+}
+
+h2 {
+    font-weight: 500;
+    font-size: 18px;
+    margin-bottom: 35px;
+}
+
+/***** Header ******/
+
+nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+nav a img {
+    padding: 20px 20px 20px 0px;
+    height: 25px;
+}
+
+nav ul {
+    list-style-type: none;
+    display: flex;
+    flex-direction: row;
+    margin-top: 0;
+}
+
+nav li {
+    margin-right: 30px;
+    margin-left: 30px;
+    padding-top: 20px;
+}
+
+nav li:hover {
+    border-top: 2px #0065FC solid;
+    color: #0065FC;
+    padding-top: 18px;
+}
+
+/***** Formulaire de recherche ******/
+
+form {
+    display: flex;
+    align-items: center;
+}
+
+.localisation {
+    background-color: var(--main-bg-color);
+    padding: 15px 14px 15px 18px;
+    border-radius: 15px 0 0 15px;
+}
+
+#lieu {
+    border-style: solid;
+    border-left: 0;
+    border-right: 0;
+    border-top-width: 1px;
+    border-bottom-width: 1px;
+    border-color: var(--main-bg-color);
+    padding: 13px 20px 14px 0px;
+    font-size: 17px;
+    font-weight: 900;
+    text-indent: 15px;
+    outline: none;
+}
+
+#lieu::placeholder {
+    color: black;
+    font-weight: 900;
+    text-align: center;
+}
+
+input:focus::placeholder {
+    opacity: 0;
+}
+
+#rechercher {
+    background-color: var(--main-color);
+    color: white;
+    font-size: 17px;
+    font-weight: 600;
+    text-align: center;
+    border: 0;
+    border-radius: 0 15px 15px 0;
+    padding: 13px 16px 15px 14px;
+    cursor: pointer;
+}
+
+#rechercher_loupe {
+    display: none;
+}
+
+form {
+    margin-bottom: 20px;
 }
 
 /****** Hebergements And Populaires ***********/
@@ -194,5 +264,18 @@ a {
 
 /* Small devices (phones, less than 768px) */
 @media (max-width: 767.98px) {
-    /* ... */
+    /* Loupe Rechercher */
+    #rechercher {
+        display: none;
+    }
+    
+    #rechercher_loupe {
+        display: block;
+        background-color: var(--main-color);
+        border: 0;
+        border-radius: 16px;
+        padding: 13px 16px 15px 14px;
+        box-shadow: 0px 3px 5px rgba(0, 0, 0, 0.42);
+        cursor: pointer;
+    }
 }
