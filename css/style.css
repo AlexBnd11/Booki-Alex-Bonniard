@@ -67,7 +67,24 @@ h1 {
 h2 {
     font-weight: 500;
     font-size: 18px;
+}
+
+.h2main {
     margin-bottom: 35px;
+}
+
+.logements_disponibles {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 10px;
+    margin: 20px 0px;
+}
+
+.logements_disponibles i {
+    border: solid 1px #D9D9D9;
+    border-radius: 50%;
+    padding: 12px;
 }
 
 /***** Header ******/
@@ -157,6 +174,38 @@ input:focus::placeholder {
 
 form {
     margin-bottom: 20px;
+}
+
+/***** Filtres ******/
+
+.filtres {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 9px;
+}
+
+.filtres button {
+    border: solid 2px #D9D9D9;
+    background-color: white;
+    border-radius: 40px;
+    padding: 12px 20px;
+    font-size: 16px;
+    font-weight: 900;
+    cursor: pointer;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.filtres button:hover {
+    background-color: var(--filter-bg-color);
+}
+
+.filtres h3 {
+    margin-right: 6px;
+}
+
+.filtres i {
+    margin-right: 5px;
 }
 
 /****** Hebergements And Populaires ***********/
