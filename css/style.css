@@ -237,7 +237,7 @@ form {
 }
 
 .hebergements-cards .card {
-    width: 240px;
+    width: 29.5%;
     margin-top: 33px;
 }
 
@@ -319,8 +319,37 @@ form {
     margin-bottom: 5px;
 }
 
+/****** Activités ***********/
 
+.activites {
+    margin: 50px 30px;
+}
 
+.activites-cards {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-top: 35px;
+}
+
+.activites-card {
+    border-radius: 20px;
+    width: 23%;
+    box-shadow: 5px 10px 15px rgba(0, 0, 0, 0.09);
+}
+
+.activites-card .card-title {
+    margin: 0;
+    padding: 16px;
+}
+
+.activites-card img {
+    border-radius: 20px 20px 0 0;
+    height: 380px;
+    width: 100%;
+    object-fit: cover;
+}
 
 /* Le code ci-dessous correspond à la version responsive uniquement */
 
