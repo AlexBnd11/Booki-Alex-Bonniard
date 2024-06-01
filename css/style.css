@@ -613,6 +613,10 @@ footer section a {
     .populaires-cards a {
         width: 100%;
     }
+
+    .populaires-cards .card-title {
+        font-size: 16px;
+    }
     
     /****** Activités ***********/
     
