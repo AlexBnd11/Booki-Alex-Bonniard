@@ -184,6 +184,10 @@ input:focus::placeholder {
     display: none;
 }
 
+form button .fa-solid {
+    color: var(--main-bg-color);
+}
+
 form {
     margin-bottom: 20px;
 }
@@ -222,6 +226,7 @@ form {
 
 .filtres i {
     margin-right: 5px;
+    color: var(--main-color);
 }
 
 /****** Hebergements And Populaires ***********/
